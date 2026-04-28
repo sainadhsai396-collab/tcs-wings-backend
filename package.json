@@ -1,0 +1,19 @@
+{
+  "name": "tcs-wings-backend",
+  "version": "1.0.0",
+  "description": "TCS Wings Backend API",
+  "main": "run.py",
+  "scripts": {
+    "start": "uvicorn app.main:app --host 0.0.0.0 --port $PORT",
+    "dev": "uvicorn app.main:app --reload"
+  },
+  "dependencies": {
+    "fastapi": "^0.104.1",
+    "uvicorn": "^0.24.0",
+    "sqlalchemy": "^2.0.23",
+    "pydantic": "^2.5.0",
+    "python-jose": "^3.3.0",
+    "passlib": "^1.7.4",
+    "python-multipart": "^0.0.6"
+  }
+}
